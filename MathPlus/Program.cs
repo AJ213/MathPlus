@@ -1,12 +1,11 @@
 ﻿using System;
+using MathPlus;
 
-namespace MathPlus
+internal class Program
 {
-    internal class Program
+    private static void Main(string[] args)
     {
-        private static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, Underworld");
-        }
+        Console.WriteLine(Vector.Add(new System.Numerics.Vector3(1, 1, 1), new System.Numerics.Vector3(1, 1, 1)));
     }
 }
+
