@@ -3,9 +3,10 @@ using MathPlus;
 
 internal class Program
 {
+    //Add test code below make sure you do not commit anything. Keep this all empty.
     private static void Main(string[] args)
     {
-        Console.WriteLine(Vector.Add(new System.Numerics.Vector3(1, 1, 1), new System.Numerics.Vector3(1, 1, 1)));
+        
     }
 }
 

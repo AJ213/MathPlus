@@ -2,11 +2,15 @@
 
 namespace MathPlus
 {
-    public class Vector
+    internal class Vector
     {
-        public static Vector3 Add(Vector3 num1, Vector3 num2)
+        public static Vector3 ConvertToV3(Vector2 vector2, float z)
         {
-            return num1 + num2;
+            return new Vector3(vector2.X, vector2.Y, z);
+        }
+        public static Vector4 ConvertToV4(Vector3 vector3, float w)
+        {
+            return new Vector4(vector3.X, vector3.Y, vector3.Z, w);
         }
     }
 }
