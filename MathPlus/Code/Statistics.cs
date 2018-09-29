@@ -59,5 +59,13 @@ namespace MathPlus.Code
             data = Deviation(data, Mean(data));
             return (float) (Math.Sqrt((Math.Pow(data.Sum(), 2)) / (data.Count - 1)));
         }
+
+        public static List<float> StandardScore(List<float> data)
+        {
+            float mean = Mean(data);
+            float standardDeviation = StandardDeviation(data);
+            data.ForEach(item => { item = (item - mean) / standardDeviation });
+            return data;
+        }
     }
 }
