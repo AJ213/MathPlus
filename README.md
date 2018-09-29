@@ -1,2 +1,2 @@
 # MathPlus
-Work in progress just testing
+To be honest we just want to do math stuff in programming
