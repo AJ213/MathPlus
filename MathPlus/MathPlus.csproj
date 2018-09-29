@@ -44,7 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Code\Geometry.cs" />
     <Compile Include="Code\Statistics.cs" />
+    <Compile Include="Code\Trigonometry.cs" />
     <Compile Include="Code\Vector.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
