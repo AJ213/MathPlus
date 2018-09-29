@@ -47,5 +47,17 @@ namespace MathPlus.Code
             float index = (data.Count / 2);
             return Mean(new List<float>() { (float) Math.Floor(index), (float) Math.Ceiling(index) });
         }
+
+        public static List<float> Deviation (List<float> data, float endPoint)
+        {
+            data.ForEach(item => item -= endPoint);
+            return data;
+        }
+
+        public static float StandardDeviation(List<float> data)
+        {
+            data = Deviation(data, Mean(data));
+            return (float) (Math.Sqrt((Math.Pow(data.Sum(), 2)) / (data.Count - 1)));
+        }
     }
 }
